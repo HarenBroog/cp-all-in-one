@@ -1,0 +1,20 @@
+{
+  "schema": "{
+    \"fields\": [
+      {
+        \"name\": \"normal_field\",
+        \"type\": \"string\"
+      },
+      {
+        \"name\": \"my_array\",
+        \"type\": {
+          \"items\": \"string\",
+          \"type\": \"array\"
+        }
+      }
+    ],
+    \"name\": \"WithArray\",
+    \"namespace\": \"test\",
+    \"type\": \"record\"
+  }"
+}

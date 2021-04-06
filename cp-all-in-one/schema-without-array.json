@@ -1,0 +1,13 @@
+{
+  "schema": "{
+    \"fields\": [
+      {
+        \"name\": \"normal_field\",
+        \"type\": \"string\"
+      }
+    ],
+    \"name\": \"WithoutArray\",
+    \"namespace\": \"test\",
+    \"type\": \"record\"
+  }"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "my-connector",
+  "config": {
+    "connector.class": "com.wepay.kafka.connect.bigquery.BigQuerySinkConnector",
+    "tasks.max": "2",
+    "topics": "test",
+    "sanitizeTopics": true,
+    "autoCreateTables": true,
+    "autoUpdateSchemas": true,
+    "schemaRetriever": "com.wepay.kafka.connect.bigquery.retrieve.IdentitySchemaRetriever",
+    "bufferSize": "100000",
+    "maxWriteSize": "10000",
+    "tableWriteWait": "1000",
+    "project": "my_project",
+    "defaultDataset": "my_dataset",
+    "keyfile": "/var/keys/big-query-key.json",
+    "errors.deadletterqueue.topic.name": "my-connector-dlq",
+    "errors.deadletterqueue.topic.replication.factor": 1,
+    "allowNewBigQueryFields": true,
+    "allowBigQueryRequiredFieldRelaxation": true,
+    "allowSchemaUnionization": true,
+    "includeKafkaData": true
+  }
+}
